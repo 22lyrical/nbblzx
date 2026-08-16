@@ -5,5 +5,5 @@ menu:
 comments:
   use: twikoo
   twikoo:
-    envId: https://nbb1zx.vercel.app
+    envId: https://twikoo-server-beta.vercel.app
     region:
