@@ -40,9 +40,21 @@ inject:
       </style>
 
 # 音乐播放器
-music:
-  enable: true
-  server: netease
-  type: song
-  id: 1992712131
-  autoplay: false
+inject:
+  bottom:
+    - |
+      <script>
+        var ap = new APlayer({
+          container: document.createElement('div'),
+          fixed: true,
+          mini: true,
+          autoplay: false,
+          audio: [{
+            name: '歌名',
+            artist: '歌手',
+            url: 'https://music.163.com/song/media/outer/url?id=1992712131.mp3',
+            cover: ''
+          }]
+        });
+        document.body.appendChild(ap.container);
+      </script>
