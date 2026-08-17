@@ -40,7 +40,7 @@ inject:
       </style>
 
 # 音乐播放器
-aplayer:
+music:
   enable: true
   server: netease
   type: song
