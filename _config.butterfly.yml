@@ -38,6 +38,8 @@ inject:
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
       </style>
+    - |
+      <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
   bottom:
     - |
       <script>
