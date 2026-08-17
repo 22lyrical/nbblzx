@@ -9,21 +9,13 @@ logo:
   display_post_title: true
   fixed: false
 
+# Comments System
 comments:
-  use: giscus
-  giscus:
-    repo: 22lyrical/blog-comments
-    repo_id: R_kgDOT7MINQ
-    category_id: DIC_kwDOT7MINc4DDkvJ
-    category: General
-    mapping: pathname
-    strict: 0
-    reactions_enabled: 1
-    emit_metadata: 0
-    input_position: bottom
-    theme: light
-    lang: zh-CN
-    loading: lazy
+  use: twikoo
+  text: true
+  lazyload: false
+  count: false
+  card_post_count: false
 
 # Twikoo
 twikoo:
