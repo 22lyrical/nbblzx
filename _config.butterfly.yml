@@ -29,11 +29,19 @@ card_announcement:
   enable: true
   content: 点击右上角即可进入留言板:)
 
-background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed
+# 背景图
+inject:
+  head:
+    - <style>
+        body {
+          background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
+        }
+      </style>
 
-music:
+# 音乐播放器
+aplayer:
   enable: true
-  id: 1992712131
   server: netease
   type: song
+  id: 1992712131
   autoplay: false
