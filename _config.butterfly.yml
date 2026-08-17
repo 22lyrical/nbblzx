@@ -23,3 +23,9 @@ twikoo:
   region:
   visitor: false
   option:
+
+card_announcement:
+  enable: true
+  content: 点击右上角即可进入留言板:)
+
+background: url(/img/背景图.jpg) center/cover no-repeat fixed
