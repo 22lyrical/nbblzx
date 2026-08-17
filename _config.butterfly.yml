@@ -2,6 +2,7 @@
 menu:
   首页: / || fas fa-home
   留言板: /message/ || fas fa-comments
+  照片墙: /photos/ || fas fa-images
 
 # Navigation bar logo image
 logo:
@@ -28,4 +29,11 @@ card_announcement:
   enable: true
   content: 点击右上角即可进入留言板:)
 
-background: url(/img/背景图.jpg) center/cover no-repeat fixed
+background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed
+
+music:
+  enable: true
+  id: 1992712131
+  server: netease
+  type: song
+  autoplay: false
