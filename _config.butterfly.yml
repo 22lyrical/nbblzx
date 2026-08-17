@@ -32,7 +32,8 @@ card_announcement:
 # 背景图
 inject:
   head:
-    - <style>
+    - |
+      <style>
         body {
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
