@@ -29,7 +29,7 @@ card_announcement:
   enable: true
   content: 点击右上角即可进入留言板:)
 
-# 背景图
+# 背景图和音乐播放器
 inject:
   head:
     - |
@@ -38,9 +38,6 @@ inject:
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
       </style>
-
-# 音乐播放器
-inject:
   bottom:
     - |
       <script>
