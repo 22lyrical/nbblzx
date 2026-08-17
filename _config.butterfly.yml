@@ -1,9 +1,25 @@
+# Navigation Settings
 menu:
   首页: / || fas fa-home
   留言板: /message/ || fas fa-comments
 
+# Navigation bar logo image
+logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+# Comments System
 comments:
   use: twikoo
-  twikoo:
-    envId: https://twikoo-server-beta.vercel.app
-    region:
+  text: true
+  lazyload: false
+  count: false
+  card_post_count: false
+
+# Twikoo
+twikoo:
+  envId: https://twikoo-server-beta.vercel.app
+  region:
+  visitor: false
+  option:
