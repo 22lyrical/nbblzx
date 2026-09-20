@@ -26,7 +26,7 @@ twikoo:
   visitor: false
   option:
 
-# =====公告，缩进2空格！！=====
+# 公告卡片
 card_announcement:
   enable: true
   content: 欢迎来到26届回忆录✨右上角可以进入留言板
@@ -46,7 +46,7 @@ aside:
       text: Follow Me
       link: https://github.com/22lyrical
 
-# 背景图和音乐播放器
+# 背景图和手机端修复
 inject:
   head:
     - |
@@ -62,7 +62,7 @@ inject:
           background: transparent !important;
         }
 
-        /* 手机端：修改垂直位置，优先保留图片中间内容，取消fixed防挤压 */
+        /* 手机端：修复拉伸 */
         @media (max-width: 768px) {
           body {
             background-attachment: scroll !important;
