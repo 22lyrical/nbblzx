@@ -11,11 +11,6 @@ logo:
   display_post_title: true
   fixed: false
 
-# ========== 新增：侧边栏头像配置 ==========
-avatar:
-  img: /img/avatar.jpg   # 头像图片，放到 source/img/ 文件夹
-  effect: false          # true=鼠标悬浮旋转，false=不旋转
-
 # Comments System
 comments:
   use: twikoo
@@ -31,9 +26,25 @@ twikoo:
   visitor: false
   option:
 
+# 公告卡片 【这里重点！缩进不要错！】
 card_announcement:
   enable: true
-  content: 点击右上角即可进入留言板:)
+  content: 欢迎来到26届回忆录✨右上角可以进入留言板
+
+# 侧边栏作者卡片
+aside:
+  card_author:
+    enable: true
+    avatar:
+      img: /img/avatar.jpg
+      effect: false
+    name: 这是我画的仑中顾外拟人
+    description: ''
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/22lyrical
 
 # 背景图和音乐播放器
 inject:
