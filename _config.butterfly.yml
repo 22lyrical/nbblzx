@@ -35,14 +35,14 @@ inject:
   head:
     - |
       <style>
-        #site-info {
-          background: rgba(0, 80, 60, 0.75) !important;
-        }
         body {
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
-        /* #page-header 深绿半透明，和 #site-info 配色统一 */
         #page-header {
           background-color: rgba(0, 80, 60, 0.75) !important;
+        }
+        /* 移除标题上面那层遮罩 */
+        #page-header::before {
+          background: transparent !important;
         }
       </style>
