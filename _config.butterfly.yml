@@ -3,6 +3,7 @@ menu:
   首页: / || fas fa-home
   留言板: /message/ || fas fa-comments
   照片墙: /photos/ || fas fa-images
+  音乐: /music/ || fas fa-music
 
 # Navigation bar logo image
 logo:
@@ -34,15 +35,10 @@ inject:
   head:
     - |
       <style>
+        #site-info {
+          background: rgba(0, 80, 60, 0.75) !important;
+        }
         body {
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
       </style>
-
-# 音乐播放器
-aplayer:
-  enable: true
-  server: netease
-  type: song
-  id: 1992712131
-  autoplay: false
