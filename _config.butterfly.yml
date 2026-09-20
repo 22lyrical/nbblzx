@@ -11,6 +11,11 @@ logo:
   display_post_title: true
   fixed: false
 
+# ========== 新增：侧边栏头像配置 ==========
+avatar:
+  img: /img/avatar.png   # 头像图片，放到 source/img/ 文件夹
+  effect: false          # true=鼠标悬浮旋转，false=不旋转
+
 # Comments System
 comments:
   use: twikoo
@@ -35,6 +40,7 @@ inject:
   head:
     - |
       <style>
+        /* PC端：固定背景 */
         body {
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
@@ -44,5 +50,12 @@ inject:
         /* 移除标题上面那层遮罩 */
         #page-header::before {
           background: transparent !important;
+        }
+
+        /* 手机端：取消fixed，修复背景压缩 */
+        @media (max-width: 768px) {
+          body {
+            background-attachment: scroll !important;
+          }
         }
       </style>
