@@ -28,3 +28,4 @@ title: 26届回忆录
 ---
 
 点击右上角即可进入留言板
+或者此链接https://nbblzx.pages.dev/message/
