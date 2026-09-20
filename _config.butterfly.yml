@@ -41,4 +41,4 @@ inject:
         body {
           background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
         }
-</style>
+      </style>
