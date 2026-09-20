@@ -26,7 +26,7 @@ twikoo:
   visitor: false
   option:
 
-# 公告卡片 【这里重点！缩进不要错！】
+# =====公告，缩进2空格！！=====
 card_announcement:
   enable: true
   content: 欢迎来到26届回忆录✨右上角可以进入留言板
