@@ -31,10 +31,6 @@ twikoo:
   visitor: false
   option:
 
-card_announcement:
-  enable: true
-  content: 点击右上角即可进入留言板:)
-
 # 背景图和手机端修复
 inject:
   head:
@@ -59,3 +55,48 @@ inject:
           }
         }
       </style>
+
+# Aside Settings
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: '北仑中学26届回忆录'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/22lyrical
+  card_announcement:
+    enable: true
+    content: '点击右上角即可进入留言板:)'
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
