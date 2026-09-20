@@ -40,22 +40,22 @@ inject:
   head:
     - |
       <style>
-        /* PC端：固定背景 */
+        /* PC端 */
         body {
-          background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
+          background: url(/img/blzxnwl.jpg) center center/cover no-repeat fixed !important;
         }
         #page-header {
           background-color: rgba(0, 80, 60, 0.75) !important;
         }
-        /* 移除标题上面那层遮罩 */
         #page-header::before {
           background: transparent !important;
         }
 
-        /* 手机端：取消fixed，修复背景压缩 */
+        /* 手机端：修改垂直位置，优先保留图片中间内容，取消fixed防挤压 */
         @media (max-width: 768px) {
           body {
             background-attachment: scroll !important;
+            background-position: center 30% !important;
           }
         }
       </style>
