@@ -35,10 +35,23 @@ inject:
   head:
     - |
       <style>
-        #site-info {
-          background: rgba(0, 80, 60, 0.75) !important;
+        body::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          /* 深绿色半透明 (最后一位的 0.8 是透明度，1.0为不透明，0为全透明) */
+          background: rgba(15, 60, 35, 0.8) !important;
+          /* 如果你想保留背景图片，并给图片蒙上一层深绿色滤镜，把上面那行注释掉，换成下面这行： */
+          /* background: linear-gradient(rgba(15, 60, 35, 0.8), rgba(15, 60, 35, 0.8)), url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important; */
+          z-index: -1;
         }
-        body {
-          background: url(/img/blzxnwl.jpg) center/cover no-repeat fixed !important;
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+          body::before {
+            background: rgba(15, 60, 35, 0.8) !important;
+          }
         }
       </style>
